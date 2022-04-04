@@ -1,15 +1,10 @@
-
 /*
-
 Program: Faculty.java          Last Date of this Revision: March 31, 2022
-
 Purpose: An application that gets and returns department name
-
 Author: Ali Akbari 
 School: CHHS
 Course: Computer Science 30
  
-
 */
 
 
@@ -49,4 +44,3 @@ public class Faculty extends UEmployee {
 	
 	
 }
-

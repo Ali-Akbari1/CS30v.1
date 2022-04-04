@@ -3,17 +3,12 @@
 
 
 /*
-
 Program: Car.java          Last Date of this Revision: March 31, 2022
-
-
 Purpose: An application that gets fuel economy, seating, cargo, and description of a car
-
 Author: Ali Akbari 
 School: CHHS
 Course: Computer Science 30
  
-
 */
 
 

@@ -1,16 +1,10 @@
-
 /*
-
 Program: Staff.java          Last Date of this Revision: March 31, 2022
-
-
 Purpose: An application that returns an Employees job title
-
 Author: Ali Akbari 
 School: CHHS
 Course: Computer Science 30
  
-
 */
 
 

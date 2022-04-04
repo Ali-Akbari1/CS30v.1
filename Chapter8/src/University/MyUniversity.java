@@ -1,16 +1,11 @@
 
 /*
-
 Program: MyUniversity.java          Last Date of this Revision: March 31, 2022
-
-
 Purpose: An application that gets user input and returns the variables
-
 Author: Ali Akbari 
 School: CHHS
 Course: Computer Science 30
  
-
 */
 
 
@@ -143,12 +138,6 @@ public class MyUniversity
 
 
 /* SCREEN DUMP
-
-
-
-
-
-
 What is Your First Name?
 Ali
 What is Your Last Name?
@@ -163,12 +152,6 @@ Math
 University Employee Name: Ali Akbari
 Salary: 40000.0
 Faculty Department: Math
-
-
-
-
-
-
 What is Your First Name?
 Jane
 What is Your Last Name?
@@ -183,15 +166,7 @@ Secretary
 University Employee Name: Jane Doe
 Salary: 100000.0
 Staff Member Job Title: Secretary
-
-
-
-
-
 */
-
-
-
 
 
 

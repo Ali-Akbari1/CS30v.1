@@ -1,17 +1,10 @@
-
-
-
 /*
-
 Program: MyBank.java          Last Date of this Revision: March 31, 2022
-
 Purpose: An application that gets user input and returns the variables
-
 Author: Ali Akbari 
 School: CHHS
 Course: Computer Science 30
  
-
 */
 
 
@@ -206,12 +199,6 @@ public class MyBank extends Account
 
 
 /* SCREEN DUMP
-
-
-
-
-
-
 What is Your First Name?
 Ali
 What is Your Last Name?
@@ -222,6 +209,10 @@ What Street Do You Live on?
 1019 1 St NW
 What is Your Zip Code?
 T2M 2S2
+
+
+
+
 Would You Like To Check Your Personal (P) Or Business Account (B) Or Quit(Q)
 Enter Choice: 
 personal
@@ -231,13 +222,6 @@ Account Holder: Ali Akbari
 The Balance of the Personal Account is: 100.0
 The Account Holder lives in: 
 Calgary 1019 1 St NW T2M 2S2
-
-
-
-
-
-
-
 What is Your First Name?
 Jane
 What is Your Last Name?
@@ -248,6 +232,11 @@ What Street Do You Live on?
 1019 1 St NW
 What is Your Zip Code?
 T2M 2S2
+
+
+
+
+
 Would You Like To Check Your Personal (P) Or Business Account (B) Or Quit(Q)
 Enter Choice: 
 B
@@ -258,12 +247,6 @@ Account Holder: Jane Doe
 The Balance of the Business Account is: 488.0
 The Account Holder lives in: 
 New York City 1019 1 St NW T2M 2S2
-
-
-
-
-
-
 */
 
 

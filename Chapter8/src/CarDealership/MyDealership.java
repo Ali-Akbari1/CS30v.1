@@ -1,16 +1,11 @@
 
 /*
-
 Program: MyDealership.java          Last Date of this Revision: March 31, 2022
-
-
 Purpose: An application that returns variables of a car, truck or minivan
-
 Author: Ali Akbari 
 School: CHHS
 Course: Computer Science 30
  
-
 */
 
 
@@ -139,16 +134,12 @@ public class MyDealership
 		//if the user chooses to quit then exit the program
 		while (action.equalsIgnoreCase("Q") || (action.equalsIgnoreCase("Quit")));
 		
-	}
+}
 }
 
 
 
 /* SCREEN DUMP
-
-
-
-
 Would You Like To Check Car (C) Or Truck (T) Or Minivan (M) Or Quit(Q)
 Enter Choice: 
 C
@@ -159,12 +150,10 @@ Cargo Volume of the Car is: 60.0 Cubic Feet
 A Car or also known as a Family car 
 has a pretty good fuel economy that seats four passengers and one driver. 
 They are generally less expensive more, comfortable and smaller than a Truck or a Minivan
-
-
-
-
-
 Would You Like To Check Car (C) Or Truck (T) Or Minivan (M) Or Quit(Q)
+
+
+
 Enter Choice: 
 truck
 Fuel Economy in the city is: 14 Miles Per Gallon
@@ -180,10 +169,11 @@ Trucks are also better at offroading then cars and minivans.
 
 
 
-
 Would You Like To Check Car (C) Or Truck (T) Or Minivan (M) Or Quit(Q)
 Enter Choice: 
-m
+
+M
+
 Fuel Economy in the city is: 30 Miles Per Gallon
 Fuel Economy on the Highway is: 35 Miles Per Gallon
 The Vehicle has 8 Seats 
@@ -193,8 +183,4 @@ The Minivan seats 1 driver and 7 passengers.
 Their main use comes from the fact they can seat many people.
 Minivans also have a good sized cargo to transport anything that is decently sized. 
 Minivans are used for larger families who maybe want to go on a road trip.
-
-
-
-
 */

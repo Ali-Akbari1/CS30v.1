@@ -1,14 +1,10 @@
 /*
-
 Program: PersonalAcct.java          Last Date of this Revision: March 31, 2022
-
 Purpose: An application that inherits Account class
-
 Author: Ali Akbari 
 School: CHHS
 Course: Computer Science 30
  
-
 */
 
 
@@ -34,3 +30,4 @@ public class PersonalAcct extends Account
 	
 
 }
+
