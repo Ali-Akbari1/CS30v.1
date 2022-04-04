@@ -1,11 +1,12 @@
+package Files;
 import java.io.*;
-import java.util.Scanner;
+import java.util.*;
 
 public class MyFile2
 {
 	public static void main(String[] args) 
 	{
-		String action;
+
 		File textFile = new File("zzz.txt");
 		if (textFile.exists()) 
 		{
@@ -16,16 +17,24 @@ public class MyFile2
 		else 
 		{
 
-			
-			do {
+			String action;
+			do 
+			{
 				
 
-				textFile.createNewFile();
+				try 
+				{
+					textFile.createNewFile();
+				} catch (IOException e) 
+				{
+					e.printStackTrace();
+				}
+				
 				System.out.println("New File Created");
+				
 				
 				Scanner input = new Scanner(System.in);
 				System.out.println("Would You like to Keep (K) or Delete the File (D) or Quit (Q)");
-				String userInput = input.nextLine();
 				action = input.next();
 
 
