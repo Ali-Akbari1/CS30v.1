@@ -1,8 +1,8 @@
-John Doe
+JohnDoe
 86
-Ali Akbari
+AliAkbari
 99
-Surkhab Mundi
+SurkhabMundi
 90
-Carter Sarney
+CarterSarney
 95
