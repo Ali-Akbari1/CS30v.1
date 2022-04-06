@@ -15,9 +15,14 @@ public class Stats
 		String name;
 		double avgScore;
 		double totalScores = 0;
+		String grade;
 		double score = 0;
 		int numScores = 0;
-		double g1 = 0;
+		String g1;
+		double g12;
+		String [] input = new String[8];
+		String fnam;
+		String lnam;
 		
 		
 		
@@ -29,12 +34,13 @@ public class Stats
 			
 			while((name = readFile.readLine()) != null) 
 			{
-				numScores +=1;
-				System.out.println(name);
-				//totalScores += Double.parseDouble(name);
+				
+				g1 = input[1];
+				g12 = g1.Double.parseDouble(g1);
+				System.out.println(g1);
+				
 				
 			}
-			//g1 = Double.parseDouble(info[1].toString());
 			avgScore = totalScores / numScores; 
 			System.out.println("Average Score =   "+ avgScore);
 			readFile.close();
