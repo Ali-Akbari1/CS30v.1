@@ -8,42 +8,54 @@ public class Roster
 	
 	public static void main(String[] args) 
 	{
+
+		
 		Scanner input = new Scanner(System.in);
-		System.out.println("Enter the name of your file");
-		String userInput = input.nextLine();
+		String fileName;
+		int num;
+		String name;
+		FileReader in;
+		BufferedReader readFile;
+		FileWriter out;
+		BufferedWriter writeFile;
 		
-		File textFile = new File(userInput);
-		if (textFile.exists()) 
+		
+		System.out.println("Enter the Name of your File: ");
+		fileName = input.next();
+		fileName = fileName + ".txt";
+		File dataFile = new File(fileName);
+		
+		
+		System.out.println("What is the Number of Students in Your Class: ");
+		num = input.nextInt();
+		
+		
+		try 
 		{
-			Scanner num = new Scanner(System.in);
-			System.out.println("What is the Number of Students in Your Class: ");
-			String num1 = num.nextLine();
+			out = new FileWriter(dataFile);
+			writeFile = new BufferedWriter(out);
 			
-			Scanner nam = new Scanner(System.in);
-			System.out.println("Please Enter the First Name and the Last Name of each Student");
-			String nam1 = nam.nextLine();
+			for (int i = 0; i < num; i++) 
+			{
+				  System.out.print("Enter Student Name: ");
+				  name = input.next();
+				  writeFile.write(name);
+				  writeFile.newLine();
+			}
 			
-			 try 
-			 {
-			      FileWriter myWriter = new FileWriter("output.txt");
-			      myWriter.write(nam1);
-			      myWriter.close();
-			      System.out.println("Successfully wrote to the file.");
-			    } 
-			 catch (IOException e)
-			 {
-					System.out.println("Problem Reading File");
-					System.err.println("IO Exception: " + e.getMessage());
-			    }
-			
-			
-			
+			writeFile.close();
+			out.close();
+			System.out.println("Data Has Been Written To File");
 		}
 		
-		else 
+		catch(IOException e)
+		
 		{
-			System.out.println("File Does Not Exist");
+			System.out.println("Problem Reading File");
+			System.err.println("IO Exception: " + e.getMessage());
 		}
+		
+		
 	}
 
 }
