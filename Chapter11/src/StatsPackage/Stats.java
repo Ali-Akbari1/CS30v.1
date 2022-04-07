@@ -2,6 +2,7 @@ package StatsPackage;
 
 
 import java.io.*;
+import java.util.ArrayList;
 
 public class Stats 
 {
@@ -12,37 +13,50 @@ public class Stats
 		File dataFile = new File("test1.txt");
 		FileReader in;
 		BufferedReader readFile;
-		String name;
+		String currentLine;
 		double avgScore;
 		double totalScores = 0;
-		String grade;
-		double score = 0;
 		int numScores = 0;
-		String g1;
-		double g12;
-		String [] input = new String[8];
-		String fnam;
-		String lnam;
-		
-		
-		
+		double highestGrd = 0;
+		double lowestGrd = 100;
+		double grade = 0;
+		ArrayList<String> names = new ArrayList<String>();
+		ArrayList<String> grades = new ArrayList<String>();
+
 		try 
 		{
 			in = new FileReader(dataFile);
 			readFile = new BufferedReader(in);
 			
-			
-			while((name = readFile.readLine()) != null) 
+			System.out.println("Name:\t\tScore:" );
+			while((currentLine = readFile.readLine()) != null) 
 			{
+				names.add(currentLine);
+				System.out.print(currentLine +"\t");
+				currentLine = readFile.readLine();
+				System.out.println(currentLine);
+				grades.add(currentLine);
+				grade = Double.parseDouble(currentLine);
+				totalScores += Double.parseDouble(currentLine);
+				numScores +=1;
 				
-				g1 = input[1];
-				g12 = g1.Double.parseDouble(g1);
-				System.out.println(g1);
+				if (grade > highestGrd) 
+				{
+					highestGrd = grade;
+				}
+				
+				if (grade < lowestGrd) 
+				{
+					lowestGrd = grade;
+				}
+				
 				
 				
 			}
 			avgScore = totalScores / numScores; 
-			System.out.println("Average Score =   "+ avgScore);
+			System.out.println("Highest Score: " + highestGrd);
+			System.out.println("Lowest Score: " + lowestGrd);
+			System.out.println("Average Score = "+ avgScore);
 			readFile.close();
 			in.close();
 		} 
