@@ -42,7 +42,7 @@ public class Stats2
 		double score;
 		String name;
 		
-		
+		//Write File
 		try 
 		{
 			out = new FileWriter(dataFile);
@@ -73,7 +73,7 @@ public class Stats2
 		}
 		
 		
-		
+		//Read File
 		try 
 		{
 			in = new FileReader(dataFile);

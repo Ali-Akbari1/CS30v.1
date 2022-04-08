@@ -24,7 +24,7 @@ public class StuName implements Serializable
 		String stuString;
 		
 		
-		stuString = firstName + lastName;
+		stuString = firstName + " " + lastName;
 		return(stuString);
 	}
 

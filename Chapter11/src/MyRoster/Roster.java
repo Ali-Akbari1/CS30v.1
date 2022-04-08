@@ -13,12 +13,8 @@ public class Roster
 		Scanner input = new Scanner(System.in);
 		String fileName;
 		int num;
-		String name;
-		FileReader in;
-		BufferedReader readFile;
-		FileWriter out;
-		BufferedWriter writeFile;
-		
+		String firstName;
+		String lastName;
 		
 		System.out.println("Enter the Name of your File: ");
 		fileName = input.next();
@@ -30,22 +26,55 @@ public class Roster
 		num = input.nextInt();
 		
 		
-		try 
+		try //Write Objects
 		{
-			out = new FileWriter(dataFile);
-			writeFile = new BufferedWriter(out);
+			FileOutputStream out = new FileOutputStream(dataFile);
+			ObjectOutputStream writeFile = new ObjectOutputStream(out);
+
 			
 			for (int i = 0; i < num; i++) 
 			{
-				  System.out.print("Enter Student Name: ");
-				  name = input.next();
-				  writeFile.write(name);
-				  writeFile.newLine();
+				  System.out.print("Enter Student First Name: ");
+				  firstName = input.next();
+				  
+				  System.out.print("Enter Student Last Name: ");
+				  
+				  lastName = input.next();
+				  
+				  
+				  
+				  
+				  writeFile.writeObject(new StuName(firstName, lastName));
 			}
 			
 			writeFile.close();
-			out.close();
 			System.out.println("Data Has Been Written To File");
+			
+			
+			//Read and display Objects
+			
+			FileInputStream in = new FileInputStream(dataFile);
+		    ObjectInputStream readStuName = new ObjectInputStream(in);
+		    
+		    
+		    for (int i = 0; i < num; i++) 
+			{
+			
+			
+		   System.out.println((StuName)readStuName.readObject());
+		   
+		   
+			
+			}
+		    readStuName.close();
+			
+		}
+		
+		
+		catch(FileNotFoundException e) 
+		{
+			System.out.println("File Could Not be Found");
+			System.out.println("File Not Found Exception" + e.getMessage());
 		}
 		
 		catch(IOException e)
@@ -55,6 +84,11 @@ public class Roster
 			System.err.println("IO Exception: " + e.getMessage());
 		}
 		
+		catch(ClassNotFoundException e) 
+		{
+			System.out.println("Class Not Found Exception" + e.getMessage());
+			
+		}
 		
 	}
 
